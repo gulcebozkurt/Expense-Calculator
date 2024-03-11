@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/calc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.heading{
+    margin-top: 30px;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 20px rgb(40, 176, 30);
+    font-size: 35px;
+}
+
+.container{
+    background-color: #fff;
+    width: 500px;
+    height: 600px;
+    margin-top: -20px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main{
+    font-size: 23px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.main > input{
+  border: none;
+  outline: none;
+  font-size: 23px;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.double{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.form-spending, .form-price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+input{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn{
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px 17px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    scale: 1.03;
+    transition: .3s;
+}
+
+.form-status{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.total{
+    background-color: rgb(38, 38, 58);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#total-info{
+    margin-left: 5px;
+}
+
+.total > span{
+    color: yellow;
+}
+
+.list{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.spending{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;gap: 10px;
+}
+
+.spending h2:nth-child(2){
+    color: red;
+}
+
+.buttons img{
+    width: 50px;
+    height: 50px;
+}
+
+.buttons img:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.payed{
+    opacity: 0.6;
+}
+
+.payed h2:nth-child(2){
+    color: green;
+}
+
+.payed h2:nth-child(1){
+    text-decoration: line-through;
+}
